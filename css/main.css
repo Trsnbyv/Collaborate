@@ -12,6 +12,27 @@
   font-style: normal;
   font-display: swap;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  cursor: pointer;
+}
+
+.launch-bg-img {
+  background-image: url(/images/bg-img.png);
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+}
+
+.lounch-header {
+  padding: 40px 0 76px 55px;
+}
+
+.lounch-top {
 @font-face {
   font-family: "Barlow";
   src: url("../fonts/Barlow-Bold.woff2") format("woff2"), url("../fonts/Barlow-Bold.woff") format("woff");
@@ -136,6 +157,7 @@
   justify-content: space-between;
 }
 
+.lounch__logo-link {
 .crew__logo-link {
   display: inline-block;
 }
