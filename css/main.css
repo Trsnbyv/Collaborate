@@ -33,12 +33,32 @@
 }
 
 .lounch-top {
+.crew-body {
+  background-color: black;
+  background-image: url("../images/crew-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.crew-body {
+  background-image: url("../images/crew-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top left;
+}
+
+.crew-header {
+  padding: 40px 0 76px 55px;
+}
+
+.crew-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .lounch__logo-link {
+.crew__logo-link {
   display: inline-block;
 }
 
