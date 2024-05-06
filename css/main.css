@@ -1,17 +1,113 @@
 @font-face {
-  font-family: "Bellefair";
+  font-family: 'Bellefair';
   src: url("../fonts/Bellefair-Regular.woff2") format("woff2"), url("../fonts/Bellefair-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "Barlow";
+  font-family: 'Barlow';
   src: url("../fonts/Barlow-Regular.woff2") format("woff2"), url("../fonts/Barlow-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
+.moon-body {
+  background-image: url("../images/bodyimg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top left;
+}
+
+.moon-header {
+  padding: 40px 0 76px 55px;
+}
+
+.moon-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.star__logo-link {
+  display: inline-block;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+.navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 48px;
+}
+
+.navbar {
+  position: relative;
+  width: 830px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-backdrop-filter: blur(81.55px);
+          backdrop-filter: blur(81.55px);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  width: 473px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.25);
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: -449px;
+}
+
+.navbar__link {
+  display: inline-block;
+  padding: 35px 0;
+  color: white;
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navbar__link:hover {
+  border-color: white;
+}
+
+.navbar__bold {
+  display: inline-block;
+  margin-right: 11px;
+  color: white;
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+}
+
 .container {
   width: 1150px;
   margin: 0 auto;
@@ -23,7 +119,8 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -38,4 +135,5 @@
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
